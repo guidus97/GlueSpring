@@ -44,7 +44,7 @@ public class AppListener implements ApplicationListener<ApplicationStartedEvent>
 
 				logger.getInstanceLogger().info("Inizialization of parameters...");
 				
-				restTemplate.getForEntity("http://localhost:8080/token/getToken", Void.class);
+				restTemplate.getForEntity("http://localhost:9090/token/getToken", Void.class);
 				
 				logger.getInstanceLogger().info(ObjectGeneral.mpxToken);
 			}
