@@ -12,6 +12,7 @@ import org.springframework.web.client.RestTemplate;
 import com.example.GlueSpring.controller.TokenController;
 import com.example.GlueSpring.service.TokenService;
 
+@RunWith(SpringRunner.class)
 @SpringBootTest(classes = {TokenService.class, TokenController.class})
 public class TokenServiceTest {
 	
