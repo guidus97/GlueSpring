@@ -9,9 +9,10 @@ import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
+import com.example.GlueSpring.controller.TokenController;
 import com.example.GlueSpring.service.TokenService;
 
-@SpringBootTest
+@SpringBootTest(classes = {TokenService.class, TokenController.class})
 public class TokenServiceTest {
 	
 	@Autowired
