@@ -25,6 +25,14 @@ public class TokenService {
 	@Autowired
 	private RestTemplate restTemplate;
 	
+	public RestTemplate getRestTemplate() {
+		return restTemplate;
+	}
+
+	public void setRestTemplate(RestTemplate restTemplate) {
+		this.restTemplate = restTemplate;
+	}
+
 	public ResponseEntity<String> getToken(){
 		
 		HttpHeaders header = new HttpHeaders();
