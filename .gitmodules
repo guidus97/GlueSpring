@@ -1,0 +1,3 @@
+[submodule "GlueExpress"]
+	path = GlueExpress
+	url = https://github.com/guidus97/GlueSpring.git
